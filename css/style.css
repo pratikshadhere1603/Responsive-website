@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(242, 241, 241);
+}
+.header {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(9, 143,245);
+    color: white;
+}
+.content {
+    position: relative;
+}
+.navbar {
+    background-color: rgb(65, 65, 65);
+    height: 40px;
+    display: flex;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+}
+.navbar a.register {
+    margin-left: auto;
+}
+.navbar a:hover {
+    color: rgb(0, 203, 249);
+}
+.row .leftside {
+    float: left;
+    width: 75%;
+    background-color: rgb(242, 241, 241);
+}
+.row .rightside {
+    float: right;
+    width: 25%;
+    background-color: rgb(242, 241, 241);
+    padding-left: 20px;
+}
+.rightside h3 {
+    padding-bottom: 10px;
+}
+.leftside .box .article_img {
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    margin: 10px 0 20px;
+}
+.small_img {
+    margin: 10px 0 20px;
+}
+
+.rightside .box .small_img img{
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.small_img p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.article_img img  {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%; */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 767px) {
+    .leftside, .rightside {
+        width: 100% !important;
+    }
+    .footer {
+        position: relative;
+        margin-top: 10px;
+    }
+    .row .rightside {
+        padding-left: 0;
+    }
+    .small_img p {
+      text-align: left;
+      padding-left: 10px;
+    }
+  
+}
